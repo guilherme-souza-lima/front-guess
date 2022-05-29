@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./client/common/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./client/common/css/feathericon.css" />
+    <link rel="stylesheet" href="./client/common/css/main.css" />
+    <link rel="stylesheet" href="./client/common/css/modal_cadastro.css" />
+</head>
+
+<body class="d-flex align-items-center border-top border-top-2 border-success">
+
+    <div class="toasted animated hidden">
+        <div class="alert">
+            <p class="mb-0 msgErro"></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-5 col-xl-4 my-2">
+
+                <h3 class="text-center">
+                    <img src="./client/common/img/logo.png" width="220" />
+                </h3>
+
+                <div>
+
+                    <div class="form-group">
+                        <label>Login</label>
+                        <input type="text" id="txtUsuario" name="login" class="form-control" 
+                            placeholder="Informe seu login">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Senha</label>
+                        <input type="password" id="txtSenha" name="senha" class="form-control form-control-appended"
+                            placeholder="Informe sua senha">
+                    </div>
+
+                    <a href="#" id="btnLogin" class="btn btn-lg btn-block btn-primary mb-3">
+                        Entrar
+                    </a>
+
+                    </form>
+
+                    <a class="btn btn-secondary btn-sm float-right mt-3" href="#" data-toggle="modal"
+                    data-target="#modalFormlario" onclick="login.metodos.abrirModal()">
+                    <i class="fe fe-user"></i>&nbsp; Cadastrar
+                </a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="modal fade fixed-right" id="modalFormlario" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-vertical" role="document">
+                <div class="modal-content">
+        
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h4 class="card-header-title" id="lblTituloModal">
+                                    Cadastrar Usuário
+                                </h4>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="card-body">
+        
+                        <div class="form-group">
+                            <label for="txtName">Nome</label>
+                            <input type="text" class="form-control" name="nome" id="txtName" maxlength="200" />
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="txtLogin">Login</label>
+                            <input type="text" class="form-control" name="login" id="txtLogin" maxlength="200" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtPassword">Senha</label>
+                            <input type="password" class="form-control" name="password" id="txtPassword" maxlength="200" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtEmail">E-mail</label>
+                            <input type="text" class="form-control" name="email" id="txtEmail" maxlength="200" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtCellphone">Telefone</label>
+                            <input type="text" class="form-control" name="cellphone" id="txtCellphone" maxlength="200" />
+                        </div>
+        
+                    </div>
+        
+                    <div class="mt-auto"></div>
+        
+                    <div class="p-4">
+                        <a id="btnSalvar" href="#" class="btn btn-block btn-primary mb-2">Salvar</a>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <script type="text/javascript" src="./client/common/js/jquery.min.js"></script>
+
+        <script text="text/javascript" src="./client/common/js/popper.min.js"></script>
+        <script text="text/javascript" src="./client/common/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="./client/common/js/app.js"></script>
+        <script type="text/javascript" src="./client/common/js/login.js"></script>
+
+</body>
+
+</html>
